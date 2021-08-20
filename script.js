@@ -108,10 +108,11 @@ const applyBtn = document.getElementById('apply-btn');
 
 applyBtn.addEventListener('click' ,function(e){
     e.preventDefault;
+    const mainTotal =document.getElementById('main-total');
+    const discount = document.getElementById('discount');
+    
     if(inputCoupon.value.toLowerCase()==="stevekaku"){
-        for(let i =0; i<totalPrice.length; i++){
-            totalPrice[i].innerText = Number(totalPrice[i].innerText) - (Number(totalPrice[i].innerText)*0.2);
-        };
+            discount.innerText = Number(mainTotal.innerText) - (Number(mainTotal.innerText)*0.2);
         e.target.setAttribute("disabled", true);
        
     }
