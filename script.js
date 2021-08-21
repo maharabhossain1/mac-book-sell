@@ -8,7 +8,7 @@ const deliveryCost = document.getElementById('delivery-cost');
 
 // tatal calculation :->
 const totalPrice = document.querySelectorAll('.total-price');
-
+ console.log(totalPrice);
 function totalCost(){
     for(let i =0; i<totalPrice.length; i++){
         let total = Number(bestPrice.innerText) + Number(memoryCost.innerText) + Number(sotrageCost.innerText)+ Number(sotrageCost.innerText)+ Number(deliveryCost.innerText);
@@ -23,7 +23,7 @@ const memory16Gb = document.getElementById('memory-16');
 
 function memory (gb){
     if(gb === 8){
-        memoryCost.innerText = 00;
+        memoryCost.innerText = 0;
     }else if(gb ===16){
         memoryCost.innerText = 180;
     }
