@@ -10,14 +10,15 @@
 </head>
 <body>
 
-    <main class="d-flex mt-4 pt-4">
-        <section class="mt-4 pt-4 mx-4 px-4">        
+    <main class="container mt-4 pt-4">
+      <section class="row justify-content-center">
+        <!-- for image  -->
+        <div class=" col-lg-5 mt-4 pt-4 mx-4 px-4">        
             <img class="img-fluid" src="images/mac.png" alt="">
-        </section>
+        </div>
 
-
-        <section class="mt-4 pt-4 mx-4 px-4">
-            <!-- for content   -->
+        <!-- for content   -->
+        <div class="col-lg-6 mt-4 pt-4 mx-4 px-4">          
             <div>
                 <h1>
                     Customize your Blue 24-inch iMac with Apple M1 chip.
@@ -29,47 +30,47 @@
                 </p>
             </div>
             <!-- for memory -->
-            <div class="m-2 p-2">
+            <div class="my-2">
                 <h4>Memory</h4>
                 <div class="container">
-                    <div class="row">
-                      <div class="col">
+                    <div class="row justify-content-center">
+                      <div class="col-sm-6 mt-2 col-md-5">
                         <button id="memory-8" class="btn btn-outline-dark p-2">8GB unidfied memory</button>
                       </div>
-                      <div class="col">
+                      <div class="col-sm-6 mt-2 col-md-5">
                         <button id="memory-16" class="btn btn-outline-dark p-2">16GB unidfied memory</button>
                       </div>
                     </div>
                   </div>
             </div>
             <!-- for Storage -->
-            <div class="m-2 p-2">
+            <div class="my-2 ">
                 <h4>Storage</h4>
                 <div class="container">
-                    <div class="row">
-                      <div class="col-4">
+                    <div class="row justify-content-center">
+                      <div class="col-sm-6 mt-2 col-md-4">
                         <button id="storage-256" class="btn btn-outline-dark p-2">256GB SSD storage</button>
                       </div>
-                      <div class="col-4">
+                      <div class="col-sm-6 mt-2 col-md-4">
                         <button id="storage-512" class="btn btn-outline-dark p-2">512GB SSD storage</button>
                       </div>
-                      <div class="col-4">
+                      <div class="col-sm-6  mt-2 col-md-4">
                         <button id="storage-1tb" class="btn btn-outline-dark p-2">1TB SSD storage</button>
                       </div>
                     </div>
                   </div>
             </div>
             <!-- Choose your Delivery options -->
-            <div class="m-2 p-2">
+            <div class="my-2">
                 <h4>      
                     Choose your Delivery options
                 </h4>
                 <div class="container">
                     <div class="row">
-                      <div class="col">
+                      <div class="col-sm-6 mt-2 col-md-6">
                         <button id="delivery-free" class="btn btn-outline-dark p-2">Friday, Aug 25 FREE Prime Delivery</button>
                       </div>
-                      <div class="col">
+                      <div class="col-sm-6 mt-2 col-md-6">
                         <button id="delivery-paid" class="btn btn-outline-dark p-2">Friday, Aug 21 Delivery chargev 20$</button>
                       </div>
                     </div>
@@ -77,7 +78,7 @@
             </div>
             <!-- calculation  -->
             <div class="m-4">
-                <table class="table w-50 fw-bold">
+                <table class="table w-75 fw-bold">
                     <tbody>
                         <tr>
                           <td>Best price</td>
@@ -111,11 +112,11 @@
                     <button id="apply-btn" class="btn btn-danger mb-2">Apply</button>
                 </div>
             </div>
-            <!-- <p>stevekaku</p>     -->
-        </section>
+          </div>
+      </section>
     </main>
     <footer class="d-flex justify-content-center">
-        <div class="border-top w-75 d-flex justify-content-center">
+        <div class="border-top border-3 w-75 d-flex justify-content-center">
             <h1>Total : $<span id="discount" class="total-price">1299</span></h1>
         </div>
     </footer>
